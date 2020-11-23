@@ -12,7 +12,7 @@ const dateFormat = require("dateformat");
 const types = {
     success: {
         color: "green",
-        label: "Succcess",
+        label: "Success",
     },
     error: {
         color: "red",
