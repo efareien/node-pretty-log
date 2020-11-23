@@ -23,7 +23,7 @@ const types = {
         label: "Warning",
     },
     info: {
-        color: "blue",
+        color: "cyan",
         label: "Info",
     },
 };

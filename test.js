@@ -1,7 +1,7 @@
-const log = require("./index.js");
-const { success, info, warn, error } = require("./index.js");
+const { info, warn, error, success } = require("./index");
 
-error("Uh oh...", "okey");
-warn("Warning...");
-info("Info...");
-success("Success...");
+const msg = "hola";
+error(msg);
+warn(msg);
+info(msg);
+success(msg);
