@@ -27,7 +27,6 @@ const types = {
         label: "Info",
     },
 };
-const padSize = 18;
 
 /**
  * @name getTime
@@ -36,6 +35,42 @@ const padSize = 18;
 function getTime() {
     const now = new Date();
     return dateFormat(now, "yyyy-mm-dd hh:MM:ss");
+}
+
+/**
+ * @name success
+ * @param  {...any} messages
+ * @description Shortcut for success messages
+ */
+function success(...messages) {
+    nodePrettyLog("success", messages);
+}
+
+/**
+ * @name error
+ * @param  {...any} messages
+ * @description Shortcut for error messages
+ */
+function error(...messages) {
+    nodePrettyLog("error", messages);
+}
+
+/**
+ * @name warn
+ * @param  {...any} messages
+ * @description Shortcut for error messages
+ */
+function warn(...messages) {
+    nodePrettyLog("warn", messages);
+}
+
+/**
+ * @name info
+ * @param  {...any} messages
+ * @description Shortcut for informative messages
+ */
+function info(...messages) {
+    nodePrettyLog("info", messages);
 }
 
 /**
@@ -61,4 +96,4 @@ function nodePrettyLog(type, ...messages) {
     );
 }
 
-module.exports = nodePrettyLog;
+module.exports = { nodePrettyLog, success, error, warn, info };

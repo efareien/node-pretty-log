@@ -1,6 +1,7 @@
 const log = require("./index.js");
+const { success, info, warn, error } = require("./index.js");
 
-log("error", "Uh oh...", "okey");
-log("warn", "Warning...");
-log("info", "Info...");
-log("success", "Success...");
+error("Uh oh...", "okey");
+warn("Warning...");
+info("Info...");
+success("Success...");
