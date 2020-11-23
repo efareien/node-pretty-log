@@ -1,6 +1,6 @@
-const log = require('./node-pretty-log.js');
+const log = require("./index.js");
 
-log('error', 'Uh oh...');
-log('warn', 'Warning...');
-log('info', 'Info...');
-log('success', 'Success...');
+log("error", "Uh oh...", "okey");
+log("warn", "Warning...");
+log("info", "Info...");
+log("success", "Success...");

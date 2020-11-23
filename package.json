@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/callmenick/node-pretty-log#readme",
   "dependencies": {
-    "chalk": "^1.1.1",
+    "chalk": "^1.1.3",
     "dateformat": "^1.0.12"
   }
 }
