@@ -9,7 +9,6 @@
 const chalk = require("chalk");
 const dateFormat = require("dateformat");
 const pad = require("pad");
-const center = require("center-align");
 
 const types = {
     success: {
