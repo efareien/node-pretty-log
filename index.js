@@ -8,6 +8,8 @@
 
 const chalk = require("chalk");
 const dateFormat = require("dateformat");
+const pad = require("pad");
+const center = require("center-align");
 
 const types = {
     success: {
@@ -90,7 +92,7 @@ function nodePrettyLog(type, ...messages) {
 
     console.log.call(
         console,
-        chalk[color](`[${label}]`),
+        pad(17, chalk[color](`[${label}]`)),
         chalk.gray(getTime()),
         ...messages
     );
